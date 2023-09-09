@@ -1,5 +1,9 @@
 # Bank Account
 
+
+## Context
+J'aimerais rajouter de nouveau types de compte bancaires afin de pouvoir toucher plusieurs types de clients différents et donner des possibilités plus poussé à des clients payant un forfait.
+
 ## Objectif
 - Manipuler des classes abstract
 - Manipuler des interfaces

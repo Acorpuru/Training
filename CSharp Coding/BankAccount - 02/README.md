@@ -1,5 +1,8 @@
 # Bank Account
 
+## Context
+Nous avons pris un automaticien fonctionnel et aimerions lui donner une interaction simple pour simuler des opérations bancaires sur un client prédéfini 
+
 ## Objectif
 - Utiliser une boucle
 - Utiliser des tuples

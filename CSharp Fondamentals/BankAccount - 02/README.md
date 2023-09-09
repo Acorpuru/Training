@@ -1,5 +1,9 @@
 # Bank Account
 
+## Context
+Maintenant que j'ai un modèle simpliste pour gérer mes clients et compte bancaire associé, j'aimerais rajouter des règles lors de la création d'un client pour empêcher sa création dans certains cas (trop jeune, compte de test détecté) et être averti de la raison de la non création. 
+J'aimerais aussi pouvoir faire des transferts entre compte et pouvoir différencier un débit (-) d'un crédit (+)
+
 ## Objectif
 - Créer des expressions booléennes
 - Utiliser des variables locales

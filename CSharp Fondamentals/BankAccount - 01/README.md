@@ -1,5 +1,9 @@
 # Bank Account
 
+## Context
+En tant que nouvel acteur sur le marché des néobanques, je cherche à obtenir la capacité à créer des nouveaux clients et des comptes bancaires leur étant associé.
+J'aimerais pouvoir créer des comptes de clients et pouvoir faire des opérations bancaires sur leur compte bancaire
+
 ## Objectif
 - Créer Classes, propriétés et méthodes
 - Création d'un constructeur

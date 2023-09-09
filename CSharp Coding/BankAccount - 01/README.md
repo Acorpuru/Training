@@ -1,5 +1,8 @@
 # Bank Account
 
+## Context
+Suite à un audit rapide du code, il s'est avéré que le code était trop ouvert et que l'on pouvait mieux matéraliser les opérations des comptes bancaires
+
 ## Objectif
 - Modifier l'accessibilité des types ou méthodes
 - Manipuler Struct ou Record
@@ -10,7 +13,7 @@
 ## Travail
 - Créer un second projet pour contenir la logique et ne garder le second que pour son utilisation  
 
-- Empêcher toute création de user autrement que par une méthode static qui embarque les contrôles 
+- Empêcher toute création de user par son constructeur et passer par une classe statique
     - Le date de naissance renseignée date d'il y a plus de 18 ans
     - Le nom renseigné n'est pas "Test"
 - la classe UserHelper ne devrait plus être nécessaire
