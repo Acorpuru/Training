@@ -34,7 +34,7 @@ J'aimerais pouvoir créer des comptes de clients et pouvoir faire des opération
 
 - Créer une classe statique utilitaire pour "BankAccount" ayant comme propriété
     - creationAccountNumber en int
-- Rajouter une méthode qui prend un User en paramètre et crée un account avec
+- Rajouter une méthode qui prend un User en paramètre et crée un bankaccount avec
     - Une balance à 0
     - Un number qui correspond à la date du jour
     - Un Id correspondant à l'id de l'utilisateur
@@ -46,4 +46,5 @@ J'aimerais pouvoir créer des comptes de clients et pouvoir faire des opération
 
 ## Fonctionnalités à connaîtres
 Console.WriteLine("Methode") // Affiche "Methode" dans la console
+
 DateTime.Now.ToShortDateString() // Avoir la date du jour 
