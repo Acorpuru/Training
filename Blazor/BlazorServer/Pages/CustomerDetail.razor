@@ -1,0 +1,54 @@
+﻿@page "/fetchCustomerdetails"
+@using BackEnd.Contracts;
+@using BackEnd.Models;
+
+@inject ICustomerService customerService
+@inject NavigationManager navigationManager
+<h1>Customer Data</h1>
+<p>Blazor CRUD operation</p>
+<div class="row">
+    <div class="col-md-6">
+    </div>
+    <div class="input-group col">
+    </div>
+</div>
+<br />
+@if (CustomerList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-striped align-middle table-bordered">
+        <thead class="table-success">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Customer in CustomerList)
+            {
+                <tr>
+                    <td>@Customer.CustomerId</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+}
+@code {
+    protected List<Customer> CustomerList = new();
+    protected Customer Customer = new();
+    protected string SearchString { get; set; } = string.Empty;
+    protected override async Task OnInitializedAsync()
+    {
+        await GetCustomer();
+    }
+    protected async Task GetCustomer()
+    {
+        CustomerList = customerService.GetCustomerDetails();
+    }
+}
